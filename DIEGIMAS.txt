@@ -1,6 +1,10 @@
-1. Padarykite atsargines kopijas[nebutina]
-2. Nukopijuokite "includes" kataloga ir "mokejimai_validation.php" faila i parduotuves pagrindine direktorija
-3. Idiekite, aktyvuokite moduli
-4. Uzpildykite modulyje reikalinga informacija
+Diegimas
 
-Kilus klausimams rasykite i pagalba@mokejimai.lt
+1. Padarykite atsargines kopijas[nebutina].
+2. Nukopijuokite "includes" kataloga ir "mokejimai_validation.php" faila i parduotuves pagrindine direktorija.
+3. Idiekite, aktyvuokite moduli.
+4. Uzpildykite modulyje reikalinga informacija.
+
+Kontaktai
+
+Kilus klausimams prasome kreiptis i pagalba@mokejimai.lt
