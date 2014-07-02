@@ -4,7 +4,7 @@ require(DIR_WS_MODULES . 'payment/libwebtopay/WebToPay.php');
 
 
 try {
-    WebToPay::toggleSS2(true);
+
 
     $projectID   = $db->Execute("SELECT configuration_value FROM " . TABLE_CONFIGURATION . " WHERE configuration_key = 'MODULE_PAYMENT_PAYSERA_PROJECT_ID'");
     $projectPass = $db->Execute("SELECT configuration_value FROM " . TABLE_CONFIGURATION . " WHERE configuration_key = 'MODULE_PAYMENT_PAYSERA_PROJECT_PASS'");
@@ -36,4 +36,5 @@ try {
 } catch (Exception $e) {
     exit(get_class($e) . ': ' . $e->getMessage());
 }
+
 
