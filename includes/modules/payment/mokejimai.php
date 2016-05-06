@@ -44,12 +44,12 @@ class mokejimai extends base {
     }
 
     function confirmation() {
-        die('12345');
+        
         return false;
     }
 
     function process_button() {
-die('123');
+
         global $order, $db;
 
         $last_order_id = $db->Execute("select * from " . TABLE_ORDERS . " order by orders_id desc limit 1");
@@ -72,7 +72,7 @@ die('123');
                 'orderid'       => $this->orderID,
                 'amount'        => intval(number_format($order->info['total'], 2, '', '')),
                 'currency'      => $order->info['currency'],
-                'lang'          => (substr($_SESSION['language'], 0, 2) !== 'lt') ? 'ENG' : 'LTU',
+                'lang'          => (substr($_SESSION['language'], 0, 2) !== 'lt') ? 'ENG' : 'LIT',
 
                 'accepturl'     => $acceptURL,
                 'cancelurl'     => $cancelURL,
@@ -149,3 +149,4 @@ die('123');
         return array('MODULE_PAYMENT_PAYSERA_STATUS', 'MODULE_PAYMENT_PAYSERA_PROJECT_ID', 'MODULE_PAYMENT_PAYSERA_PROJECT_PASS', 'MODULE_PAYMENT_PAYSERA_TEST', 'MODULE_PAYMENT_PAYSERA_ORDER_STATUS_ID');
     }
 }
+
